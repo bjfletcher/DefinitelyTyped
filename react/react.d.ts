@@ -140,8 +140,8 @@ declare namespace __React {
         render(): JSX.Element;
         props: P;
         state: S;
-        context: object;
-        refs: object;
+        context: any;
+        refs: any;
     }
 
     interface ClassicComponent<P, S> extends Component<P, S> {
