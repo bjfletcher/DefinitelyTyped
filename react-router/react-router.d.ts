@@ -9,8 +9,25 @@ declare namespace ReactRouter {
 
   import React = __React;
 
-  class Router extends React.Component<{}, {}>;
-  class Route React.Component<{}, {}>;
-  class IndexRoute React.Component<{}, {}>;
+  class Router extends React.Component<{}, {}> {}
+
+  // Route
+  // --------------------------------------------------------------------------
+
+  interface RouteProps {
+    path: string;
+    component: any;
+  }
+
+  class Route extends React.Component<RouteProps, {}> {}
+
+  // IndexRoute
+  // --------------------------------------------------------------------------
+
+  interface IndexRouteProps {
+    component: any;
+  }
+
+  class IndexRoute extends React.Component<IndexRouteProps, {}> {}
 
 }
