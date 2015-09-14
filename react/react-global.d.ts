@@ -7,6 +7,10 @@
 
 import React = __React;
 
+declare namespace ReactDOM {
+  export function render(c: JSX.Element, p: HTMLElement): void;
+}
+
 declare namespace __React {
     //
     // React.addons

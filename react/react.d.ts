@@ -1,6 +1,7 @@
-// Type definitions for React v0.13.3
+// Type definitions for React v0.14.0-rc1
 // Project: http://facebook.github.io/react/
 // Definitions by: Asana <https://asana.com>, AssureSign <http://www.assuresign.com>, Microsoft <https://microsoft.com>
+// (v0.14.0-rc1 modifications by Ben Fletcher @bjfletcher)
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare namespace __React {
@@ -139,10 +140,8 @@ declare namespace __React {
         render(): JSX.Element;
         props: P;
         state: S;
-        context: {};
-        refs: {
-            [key: string]: Component<any, any>
-        };
+        context: object;
+        refs: object;
     }
 
     interface ClassicComponent<P, S> extends Component<P, S> {
